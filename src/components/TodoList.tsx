@@ -18,7 +18,7 @@ const TodoList: React.FC<TodoListProps> = ({ todos, onToggle, onRemove }) => {
       {todos.map((todo) => {
         return (
           <Card key={todo.id} className=" mb-1">
-            <Card.Body className="d-flex justify-content-between text-center">
+            <Card.Body className="d-flex justify-content-between align-items-center">
               <Form.Check // prettier-ignore
                 //type={"switch"} // или "сheckbox"
                 type={"checkbox"} // или "сheckbox"

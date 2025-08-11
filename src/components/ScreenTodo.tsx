@@ -11,14 +11,16 @@ const ScreenTodo: React.FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
 
   useEffect(() => {
-    const contloc = localStorage.getItem("todos");
-    //консоль 10 Август 2025 (воскресенье)
-    console.log(">>>> contloc из (ScreenTodo):", contloc); //консоль
+    // const contloc = localStorage.getItem("todos");
+    // //консоль 10 Август 2025 (воскресенье)
+    // console.log(">>>> contloc из (ScreenTodo):", contloc); //консоль
 
-    let saved = [] as ITodo[];
-    if (contloc) {
-      saved = JSON.parse(contloc);
-    }
+    // let saved = [] as ITodo[];
+    // if (contloc) {
+    //   saved = JSON.parse(contloc);
+    // }
+
+    const saved = JSON.parse(localStorage.getItem("todos") || "[]") as ITodo[]; //ЛайфХак с пустым значением
 
     //консоль 10 Август 2025 (воскресенье)
     console.log(">>>> saved из (ScreenTodo):", saved); //консоль
