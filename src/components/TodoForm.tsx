@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Container, Form, InputGroup } from "react-bootstrap";
+import {Form, InputGroup } from "react-bootstrap";
 
 interface TodoFormProps {
   onAdd(title: string): void;
@@ -33,7 +33,7 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
 
   return (
     <>
-      <Container>
+      
         <InputGroup>
           {/* <input type="text" name="todo" id="title" /> */}
           <Form.Control
@@ -45,7 +45,7 @@ const TodoForm: React.FC<TodoFormProps> = (props) => {
             placeholder="Введите название дела"
           />
         </InputGroup>
-      </Container>
+      
     </>
   );
 };
