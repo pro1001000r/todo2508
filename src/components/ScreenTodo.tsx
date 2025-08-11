@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "./NavBar";
+
 import TodoForm from "./TodoForm";
 import TodoList from "./TodoList";
 import { ITodo } from "./inrefaces";
@@ -73,7 +73,6 @@ const ScreenTodo: React.FC = () => {
 
   return (
     <>
-      <NavBar />
       <Container>
         <h3 className=" text-center">Список дел "TypeScript"</h3>
         <TodoForm onAdd={addHandler} />

@@ -10,7 +10,7 @@ type TodoListProps = {
 
 const TodoList: React.FC<TodoListProps> = ({ todos, onToggle, onRemove }) => {
   if (todos.length === 0) {
-    return <p>Пока дел нет</p>;
+    return <p className=" text-center">Пока дел нет</p>;
   }
 
   return (

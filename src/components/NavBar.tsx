@@ -14,7 +14,7 @@ const NavBar: React.FC = () => {
         <Navbar.Collapse id="navbar-collapse-id">
           <Nav className="me-auto">
             <Nav.Link href="/">Список дел</Nav.Link>
-            <Nav.Link href="/">О нас</Nav.Link>
+            <Nav.Link href="/about">О нас</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
